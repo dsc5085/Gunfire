@@ -1,0 +1,69 @@
+<wavepoints>
+  <wavepoint>
+    <duration>60</duration>
+    <objects>
+      <object>
+        <class>GRUNT</class>
+        <number>15</number>
+      </object>
+      <object>
+        <class>DRONE</class>
+        <number>10</number>
+      </object>
+    </objects>
+  </wavepoint>
+
+  <wavepoint>
+    <duration>60</duration>
+    <objects>
+      <object>
+        <class>EXPLODER</class>
+        <number>15</number>
+      </object>
+      <object>
+        <class>SPLITTER</class>
+        <number>5</number>
+      </object>
+    </objects>
+  </wavepoint>
+  
+  <wavepoint>
+    <duration>3</duration>
+    <objects>
+      <object>
+        <class>SPLITTER</class>
+        <number>5</number>
+      </object>
+    </objects>
+  </wavepoint>
+
+  <wavepoint>
+    <duration>3</duration>
+    <objects>
+      <object>
+        <class>SPLITTER</class>
+        <number>5</number>
+      </object>
+    </objects>
+  </wavepoint>
+
+  <wavepoint>
+    <duration>3</duration>
+    <objects>
+      <object>
+        <class>DRONE</class>
+        <number>5</number>
+      </object>
+    </objects>
+  </wavepoint>
+
+  <wavepoint>
+    <duration>3</duration>
+    <objects>
+      <object>
+        <class>GRUNT</class>
+        <number>10</number>
+      </object>
+    </objects>
+  </wavepoint>
+</wavepoints>

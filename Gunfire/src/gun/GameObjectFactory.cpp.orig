@@ -1,0 +1,115 @@
+#include "GameObjectFactory.h"
+#include "CollisionType.h"
+#include "SpriteKey.h"
+#include "Math.h"
+#include "GameObject.h"
+#include "BoundingPart.h"
+#include "TimedDeathPart.h"
+#include "ExplosionPart.h"
+#include "DieOnCollisionPart.h"
+#include "DamageOnCollisionPart.h"
+#include "PlayerControllerPart.h"
+#include "GhostPart.h"
+#include "GruntControllerPart.h"
+#include "DroneControllerPart.h"
+#include "ExploderControllerPart.h"
+#include "DiedEventArgs.h"
+#include "Services.h"
+#include "SpriteCache.h"
+
+gun::GameObject* gun::GameObjectFactory::CreateGameObject(
+	const std::string& object_class, const sf::Vector2f& position)
+{
+	GameObject* game_object = 0;
+	if (object_class == "GRUNT")
+		game_object = CreateGrunt(position);
+	else if (object_class == "DRONE")
+		game_object = CreateDrone(position);
+	else if (object_class == "EXPLODER")
+		game_object = CreateExploder(position);
+	return game_object;
+}
+
+gun::GameObject* gun::GameObjectFactory::CreatePlayer(const sf::Vector2f& position)
+{
+	Sprite sprite = Services::Instance().sprite_cache()->GetSprite(SpriteKey::KID);
+	GameObject* game_object = new GameObject(sprite, position);
+	game_object->health() = 100;
+	game_object->set_coll_type(CollisionType::PLAYER);
+	game_object->Attach(new PlayerControllerPart());
+	game_object->Attach(new BoundingPart());
+	game_object->Attach(new DamageOnCollisionPart(CollisionType::ENEMY, 100));
+	game_object->Attach(new GhostPart(10));
+	return game_object;
+}
+
+gun::GameObject* gun::GameObjectFactory::CreatePlayerBullet(
+	const sf::Vector2f& position, const sf::Vector2f& velocity)
+{
+	Sprite sprite = Services::Instance().sprite_cache()->GetSprite(SpriteKey::PLAYER_BULLET);
+	GameObject* game_object = new GameObject(sprite, position);
+	game_object->set_coll_type(CollisionType::PLAYER);
+	game_object->velocity() = velocity;
+	game_object->Attach(new TimedDeathPart(0.5));
+	game_object->Attach(new DamageOnCollisionPart(CollisionType::ENEMY, 50));
+	return game_object;
+}
+
+gun::GameObject* gun::GameObjectFactory::CreateGrunt(const sf::Vector2f& position)
+{
+	Sprite sprite = Services::Instance().sprite_cache()->GetSprite(SpriteKey::ZOMBIE);
+	GameObject* game_object = new GameObject(sprite, position, 50);
+	game_object->health() = 100;
+	game_object->set_coll_type(CollisionType::ENEMY);
+	game_object->Attach(new GruntControllerPart());
+	game_object->Attach(new DamageOnCollisionPart(CollisionType::PLAYER, 50));
+	game_object->Attach(new BoundingPart());
+	return game_object;
+}
+
+gun::GameObject* gun::GameObjectFactory::CreateDrone(const sf::Vector2f& position)
+{
+	Sprite sprite = Services::Instance().sprite_cache()->GetSprite(SpriteKey::DRONE);
+	GameObject* game_object = new GameObject(sprite, position, 150);
+	game_object->health() = 50;
+	game_object->set_coll_type(CollisionType::ENEMY);
+	game_object->Attach(new DroneControllerPart());
+	game_object->Attach(new DamageOnCollisionPart(CollisionType::PLAYER, 150));
+	game_object->Attach(new BoundingPart());
+	return game_object;
+}
+
+gun::GameObject* gun::GameObjectFactory::CreateDroneBullet(
+	const sf::Vector2f& position, const sf::Vector2f& velocity)
+{
+	Sprite sprite = Services::Instance().sprite_cache()->GetSprite(SpriteKey::DRONE_BULLET);
+	GameObject* game_object = new GameObject(sprite, position);
+	game_object->velocity() = velocity;
+	game_object->Attach(new TimedDeathPart(5));
+	game_object->Attach(new DamageOnCollisionPart(CollisionType::PLAYER, 50));
+	return game_object;
+}
+
+gun::GameObject* gun::GameObjectFactory::CreateExploder(const sf::Vector2f& position)
+{
+	Sprite sprite = Services::Instance().sprite_cache()->GetSprite(SpriteKey::BOMB);
+	GameObject* game_object = new GameObject(sprite, position, 100);
+	game_object->health() = 150;
+	game_object->set_coll_type(CollisionType::ENEMY);
+	game_object->Attach(new BoundingPart());
+	game_object->Attach(new ExploderControllerPart());
+	game_object->Attach(new DamageOnCollisionPart(CollisionType::PLAYER, 150));
+	return game_object;
+}
+
+gun::GameObject* gun::GameObjectFactory::CreateExploderExplosion(
+	const sf::Vector2f& position)
+{
+	Sprite sprite = Services::Instance().sprite_cache()->GetSprite(SpriteKey::BLUE_EXPLOSION);
+	GameObject* game_object = new GameObject(sprite, position);
+	game_object->set_coll_type(CollisionType::ENEMY_EXPLOSION);
+	game_object->Attach(new DamageOnCollisionPart(CollisionType::PLAYER, 50));
+	game_object->Attach(new ExplosionPart());
+	game_object->sprite().PlayAnimation(false);
+	return game_object;
+}

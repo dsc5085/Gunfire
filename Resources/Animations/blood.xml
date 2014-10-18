@@ -1,0 +1,9 @@
+<animations>
+  <animation>
+    <name>Explode</name>
+    <format>LINE</format>
+    <data>
+      4,32,32,16
+    </data>
+  </animation>
+</animations>

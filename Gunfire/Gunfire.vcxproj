@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\gun\AnimationFactory.h" />
+    <ClInclude Include="src\gun\AnimationFormat.h" />
+    <ClInclude Include="src\gun\BouncingPart.h" />
+    <ClInclude Include="src\gun\CollidedEventArgs.h" />
+    <ClInclude Include="src\gun\ContainerUtility.h" />
+    <ClInclude Include="src\gun\DamageOnCollisionPart.h" />
+    <ClInclude Include="src\gun\DieOnCollisionPart.h" />
+    <ClInclude Include="src\gun\DiedEventArgs.h" />
+    <ClInclude Include="src\gun\Entity.h" />
+    <ClInclude Include="src\gun\Event.h" />
+    <ClInclude Include="src\gun\EventArgs.h" />
+    <ClInclude Include="src\gun\EventBase.h" />
+    <ClInclude Include="src\gun\EventBind.h" />
+    <ClInclude Include="src\gun\EventManager.h" />
+    <ClInclude Include="src\gun\BoundingPart.h" />
+    <ClInclude Include="src\gun\Collision.h" />
+    <ClInclude Include="src\gun\DroneControllerPart.h" />
+    <ClInclude Include="src\gun\DieAfterAnimationPart.h" />
+    <ClInclude Include="src\gun\ExploderControllerPart.h" />
+    <ClInclude Include="src\gun\FileIO.h" />
+    <ClInclude Include="src\gun\InputAction.h" />
+    <ClInclude Include="src\gun\KeyNames.h" />
+    <ClInclude Include="src\gun\Log.h" />
+    <ClInclude Include="src\gun\Macros.h" />
+    <ClInclude Include="src\gun\Paths.h" />
+    <ClInclude Include="src\gun\FireRateMultiplierPart.h" />
+    <ClInclude Include="src\gun\GameOverEventArgs.h" />
+    <ClInclude Include="src\gun\GameOverScreen.h" />
+    <ClInclude Include="src\gun\GhostPart.h" />
+    <ClInclude Include="src\gun\GravityPart.h" />
+    <ClInclude Include="src\gun\GruntControllerPart.h" />
+    <ClInclude Include="src\gun\GameObjectFactory.h" />
+    <ClInclude Include="src\gun\GameObjectQuery.h" />
+    <ClInclude Include="src\gun\HighScoreEntryScreen.h" />
+    <ClInclude Include="src\gun\HighScoresScreen.h" />
+    <ClInclude Include="src\gun\HUDScreen.h" />
+    <ClInclude Include="src\gun\InputContext.h" />
+    <ClInclude Include="src\gun\Level.h" />
+    <ClInclude Include="src\gun\LevelController.h" />
+    <ClInclude Include="src\gun\LevelFactory.h" />
+    <ClInclude Include="src\gun\LevelScreen.h" />
+    <ClInclude Include="src\gun\MainMenuScreen.h" />
+    <ClInclude Include="src\gun\Math.h" />
+    <ClInclude Include="src\gun\CollisionType.h" />
+    <ClInclude Include="src\gun\AddPartOnCollisionPart.h" />
+    <ClInclude Include="src\gun\MusicKey.h" />
+    <ClInclude Include="src\gun\NewWaveEventArgs.h" />
+    <ClInclude Include="src\gun\ObjectClass.h" />
+    <ClInclude Include="src\gun\OptionsScreen.h" />
+    <ClInclude Include="src\gun\Part.h" />
+    <ClInclude Include="src\gun\PlayerControllerPart.h" />
+    <ClInclude Include="src\gun\ScoreEntry.h" />
+    <ClInclude Include="src\gun\PolygonMath.h" />
+    <ClInclude Include="src\gun\AddPartEventArgs.h" />
+    <ClInclude Include="src\gun\ProfilerOutputHandler.h" />
+    <ClInclude Include="src\gun\ProfileSample.h" />
+    <ClInclude Include="src\gun\PugiUtility.h" />
+    <ClInclude Include="src\gun\ScoreEntryComparer.h" />
+    <ClInclude Include="src\gun\Screen.h" />
+    <ClInclude Include="src\gun\ScreenDrawOrder.h" />
+    <ClInclude Include="src\gun\ScreenManager.h" />
+    <ClInclude Include="src\gun\Session.h" />
+    <ClInclude Include="src\gun\SoundCache.h" />
+    <ClInclude Include="src\gun\SoundKey.h" />
+    <ClInclude Include="src\gun\SoundOnDiePart.h" />
+    <ClInclude Include="src\gun\SpawnOnDiePart.h" />
+    <ClInclude Include="src\gun\SpeedMultiplierPart.h" />
+    <ClInclude Include="src\gun\SpinnerPart.h" />
+    <ClInclude Include="src\gun\SplitterControllerPart.h" />
+    <ClInclude Include="src\gun\Sprite.h" />
+    <ClInclude Include="src\gun\Animation.h" />
+    <ClInclude Include="src\gun\Game.h" />
+    <ClInclude Include="src\gun\GameObject.h" />
+    <ClInclude Include="src\gun\ObjectManager.h" />
+    <ClInclude Include="src\gun\Services.h" />
+    <ClInclude Include="src\gun\Singleton.h" />
+    <ClInclude Include="src\gun\AnimationLoader.h" />
+    <ClInclude Include="src\gun\SpriteCache.h" />
+    <ClInclude Include="src\gun\SpriteKey.h" />
+    <ClInclude Include="src\gun\Text.h" />
+    <ClInclude Include="src\gun\TextDecorator.h" />
+    <ClInclude Include="src\gun\TextFactory.h" />
+    <ClInclude Include="src\gun\TextFadeDecorator.h" />
+    <ClInclude Include="src\gun\TextureKey.h" />
+    <ClInclude Include="src\gun\TimedDeathPart.h" />
+    <ClInclude Include="src\gun\Timer.h" />
+    <ClInclude Include="src\gun\VectorMath.h" />
+    <ClInclude Include="src\gun\VelocityRandomizerPart.h" />
+    <ClInclude Include="src\gun\ViewManager.h" />
+    <ClInclude Include="src\gun\Wave.h" />
+    <ClInclude Include="src\gun\WaveCompleteEventArgs.h" />
+    <ClInclude Include="src\gun\WaveLoader.h" />
+    <ClInclude Include="src\gun\WavePoint.h" />
+    <ClInclude Include="src\pugi\pugiconfig.hpp" />
+    <ClInclude Include="src\pugi\pugixml.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Gunfire.cpp" />
+    <ClCompile Include="src\gun\AnimationFactory.cpp" />
+    <ClCompile Include="src\gun\BouncingPart.cpp" />
+    <ClCompile Include="src\gun\CollidedEventArgs.cpp" />
+    <ClCompile Include="src\gun\DamageOnCollisionPart.cpp" />
+    <ClCompile Include="src\gun\DieOnCollisionPart.cpp" />
+    <ClCompile Include="src\gun\DiedEventArgs.cpp" />
+    <ClCompile Include="src\gun\AddPartOnCollisionPart.cpp" />
+    <ClCompile Include="src\gun\Entity.cpp" />
+    <ClCompile Include="src\gun\EventBind.cpp" />
+    <ClCompile Include="src\gun\BoundingPart.cpp" />
+    <ClCompile Include="src\gun\Collision.cpp" />
+    <ClCompile Include="src\gun\DroneControllerPart.cpp" />
+    <ClCompile Include="src\gun\DieAfterAnimationPart.cpp" />
+    <ClCompile Include="src\gun\ExploderControllerPart.cpp" />
+    <ClCompile Include="src\gun\FileIO.cpp" />
+    <ClCompile Include="src\gun\FireRateMultiplierPart.cpp" />
+    <ClCompile Include="src\gun\GameOverEventArgs.cpp" />
+    <ClCompile Include="src\gun\GameOverScreen.cpp" />
+    <ClCompile Include="src\gun\GhostPart.cpp" />
+    <ClCompile Include="src\gun\GravityPart.cpp" />
+    <ClCompile Include="src\gun\GruntControllerPart.cpp" />
+    <ClCompile Include="src\gun\GameObjectFactory.cpp" />
+    <ClCompile Include="src\gun\GameObjectQuery.cpp" />
+    <ClCompile Include="src\gun\HighScoreEntryScreen.cpp" />
+    <ClCompile Include="src\gun\HighScoresScreen.cpp" />
+    <ClCompile Include="src\gun\HUDScreen.cpp" />
+    <ClCompile Include="src\gun\InputContext.cpp" />
+    <ClCompile Include="src\gun\KeyNames.cpp" />
+    <ClCompile Include="src\gun\LevelController.cpp" />
+    <ClCompile Include="src\gun\LevelFactory.cpp" />
+    <ClCompile Include="src\gun\LevelScreen.cpp" />
+    <ClCompile Include="src\gun\Log.cpp" />
+    <ClCompile Include="src\gun\MainMenuScreen.cpp" />
+    <ClCompile Include="src\gun\Math.cpp" />
+    <ClCompile Include="src\gun\NewWaveEventArgs.cpp" />
+    <ClCompile Include="src\gun\ObjectClass.cpp" />
+    <ClCompile Include="src\gun\OptionsScreen.cpp" />
+    <ClCompile Include="src\gun\Part.cpp" />
+    <ClCompile Include="src\gun\Paths.cpp" />
+    <ClCompile Include="src\gun\PlayerControllerPart.cpp" />
+    <ClCompile Include="src\gun\AddPartEventArgs.cpp" />
+    <ClCompile Include="src\gun\PolygonMath.cpp" />
+    <ClCompile Include="src\gun\ProfileSample.cpp" />
+    <ClCompile Include="src\gun\PugiUtility.cpp" />
+    <ClCompile Include="src\gun\Screen.cpp" />
+    <ClCompile Include="src\gun\ScreenManager.cpp" />
+    <ClCompile Include="src\gun\Session.cpp" />
+    <ClCompile Include="src\gun\SoundCache.cpp" />
+    <ClCompile Include="src\gun\SoundOnDiePart.cpp" />
+    <ClCompile Include="src\gun\SpawnOnDiePart.cpp" />
+    <ClCompile Include="src\gun\SpeedMultiplierPart.cpp" />
+    <ClCompile Include="src\gun\SpinnerPart.cpp" />
+    <ClCompile Include="src\gun\SplitterControllerPart.cpp" />
+    <ClCompile Include="src\gun\Sprite.cpp" />
+    <ClCompile Include="src\gun\Animation.cpp" />
+    <ClCompile Include="src\gun\Game.cpp" />
+    <ClCompile Include="src\gun\GameObject.cpp" />
+    <ClCompile Include="src\gun\Services.cpp" />
+    <ClCompile Include="src\gun\AnimationLoader.cpp" />
+    <ClCompile Include="src\gun\SpriteCache.cpp" />
+    <ClCompile Include="src\gun\Text.cpp" />
+    <ClCompile Include="src\gun\TextFactory.cpp" />
+    <ClCompile Include="src\gun\TextFadeDecorator.cpp" />
+    <ClCompile Include="src\gun\TimedDeathPart.cpp" />
+    <ClCompile Include="src\gun\Timer.cpp" />
+    <ClCompile Include="src\gun\VelocityRandomizerPart.cpp" />
+    <ClCompile Include="src\gun\ViewManager.cpp" />
+    <ClCompile Include="src\gun\WaveCompleteEventArgs.cpp" />
+    <ClCompile Include="src\gun\WaveLoader.cpp" />
+    <ClCompile Include="src\pugi\pugixml.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D1D94ACF-1505-4F79-87B1-E16BB4C67A8F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Gunfire</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Gunfire.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Gunfire.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Gunfire\src;$(ExternalsDir)\SFML-2.0-rc\include;$(ExternalsDir)\boost_1_54_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ExternalsDir)\SFML-2.0-rc\lib;$(ExternalsDir)\boost_1_54_0\stage\lib;$(ExternalsDir)\boost_1_54_0\boost;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Gunfire\src;$(ExternalsDir)\SFML-2.0-rc\include;$(ExternalsDir)\boost_1_54_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ExternalsDir)\SFML-2.0-rc\lib;$(ExternalsDir)\boost_1_54_0\stage\lib;$(ExternalsDir)\boost_1_54_0\boost;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-audio.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

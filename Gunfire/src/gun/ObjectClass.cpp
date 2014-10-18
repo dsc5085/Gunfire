@@ -1,0 +1,22 @@
+#include "ObjectClass.h"
+
+const char* gun::ObjectClass::StringValue[] = 
+{
+	STR(PLAYER), 
+	STR(PLAYER_BULLET), 
+	STR(GRUNT), 
+	STR(GRUNT_HEAD), 
+	STR(GRUNT_ARM), 
+	STR(GRUNT_LEG), 
+	STR(DRONE), 
+	STR(DRONE_BULLET), 
+	STR(EXPLODER), 
+	STR(SPLITTER), 
+	STR(DEATH_ARROW), 
+	STR(BLOOD), 
+	STR(EXPLOSION), 
+	STR(SPEED_POWER_UP), 
+	STR(FIRE_RATE_POWER_UP), 
+	STR(GHOSTING_POWER_UP), 
+	STR(NONE)
+};

@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{a473bc70-884b-4c32-91ee-7ae44b16cde2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gun">
+      <UniqueIdentifier>{5e6d9dbc-0101-452d-b02c-cc862a90fca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gun\Graphics">
+      <UniqueIdentifier>{a3cb32f5-251a-4b8e-9c1a-c2b66fb9dfb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gun\Utility">
+      <UniqueIdentifier>{20e4742c-7578-464b-936c-49be47263d12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gun\Object">
+      <UniqueIdentifier>{fb660622-754f-4ab6-a8ff-5268b2243f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\pugi">
+      <UniqueIdentifier>{f9920f8e-6b82-4e7a-9ce7-819f89e754b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gun\Level">
+      <UniqueIdentifier>{cf481331-d604-4c9f-9a8f-51a61db510df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gun\Event">
+      <UniqueIdentifier>{056ab3f4-6f7b-4b46-9113-ea570f682990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gun\Screen">
+      <UniqueIdentifier>{0a783df4-6702-45ab-8c2e-44c77e7b2811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gun\Audio">
+      <UniqueIdentifier>{ca4e5532-9edf-4fae-9ed3-31f3afa3b07c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gun\Object\Part">
+      <UniqueIdentifier>{08b13c09-c300-4da1-801b-7f67395b6e86}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\gun\Game.h">
+      <Filter>src\gun</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\ViewManager.h">
+      <Filter>src\gun\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Singleton.h">
+      <Filter>src\gun\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Services.h">
+      <Filter>src\gun</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\GameObject.h">
+      <Filter>src\gun\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Animation.h">
+      <Filter>src\gun\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\VectorMath.h">
+      <Filter>src\gun\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Sprite.h">
+      <Filter>src\gun\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pugi\pugiconfig.hpp">
+      <Filter>src\pugi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pugi\pugixml.hpp">
+      <Filter>src\pugi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\AnimationLoader.h">
+      <Filter>src\gun\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\SpriteCache.h">
+      <Filter>src\gun\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\SpriteKey.h">
+      <Filter>src\gun\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\TextureKey.h">
+      <Filter>src\gun\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Timer.h">
+      <Filter>src\gun\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\LevelFactory.h">
+      <Filter>src\gun\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Level.h">
+      <Filter>src\gun\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Wave.h">
+      <Filter>src\gun\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\LevelController.h">
+      <Filter>src\gun\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Math.h">
+      <Filter>src\gun\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Collision.h">
+      <Filter>src\gun\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\EventManager.h">
+      <Filter>src\gun\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Event.h">
+      <Filter>src\gun\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\EventArgs.h">
+      <Filter>src\gun\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\EventBase.h">
+      <Filter>src\gun\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\EventBind.h">
+      <Filter>src\gun\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\DiedEventArgs.h">
+      <Filter>src\gun\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\CollidedEventArgs.h">
+      <Filter>src\gun\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\GameObjectFactory.h">
+      <Filter>src\gun\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\GameObjectQuery.h">
+      <Filter>src\gun\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\WavePoint.h">
+      <Filter>src\gun\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\WaveLoader.h">
+      <Filter>src\gun\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\PugiUtility.h">
+      <Filter>src\gun\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Session.h">
+      <Filter>src\gun</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\CollisionType.h">
+      <Filter>src\gun\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\PolygonMath.h">
+      <Filter>src\gun\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\ContainerUtility.h">
+      <Filter>src\gun\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\ScreenManager.h">
+      <Filter>src\gun\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Screen.h">
+      <Filter>src\gun\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\LevelScreen.h">
+      <Filter>src\gun\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\HUDScreen.h">
+      <Filter>src\gun\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\InputContext.h">
+      <Filter>src\gun\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\ObjectManager.h">
+      <Filter>src\gun\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\ProfileSample.h">
+      <Filter>src\gun\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\ProfilerOutputHandler.h">
+      <Filter>src\gun\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Entity.h">
+      <Filter>src\gun\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\ObjectClass.h">
+      <Filter>src\gun\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\AddPartEventArgs.h">
+      <Filter>src\gun\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Text.h">
+      <Filter>src\gun\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\NewWaveEventArgs.h">
+      <Filter>src\gun\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\FileIO.h">
+      <Filter>src\gun\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\SoundCache.h">
+      <Filter>src\gun\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\SoundKey.h">
+      <Filter>src\gun\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\AddPartOnCollisionPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\BoundingPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\BouncingPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\DamageOnCollisionPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\DieOnCollisionPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\DroneControllerPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\FireRateMultiplierPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\GhostPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\GruntControllerPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Part.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\PlayerControllerPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\SoundOnDiePart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\SpeedMultiplierPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\TimedDeathPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\VelocityRandomizerPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\MusicKey.h">
+      <Filter>src\gun\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\GravityPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\SpinnerPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\AnimationFactory.h">
+      <Filter>src\gun\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\AnimationFormat.h">
+      <Filter>src\gun\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\DieAfterAnimationPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\SpawnOnDiePart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\ExploderControllerPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\ScoreEntry.h">
+      <Filter>src\gun</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\HighScoreEntryScreen.h">
+      <Filter>src\gun\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\ScoreEntryComparer.h">
+      <Filter>src\gun</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\GameOverEventArgs.h">
+      <Filter>src\gun\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\HighScoresScreen.h">
+      <Filter>src\gun\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\WaveCompleteEventArgs.h">
+      <Filter>src\gun\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\TextFactory.h">
+      <Filter>src\gun\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\TextFadeDecorator.h">
+      <Filter>src\gun\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\TextDecorator.h">
+      <Filter>src\gun\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\ScreenDrawOrder.h">
+      <Filter>src\gun\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\SplitterControllerPart.h">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\GameOverScreen.h">
+      <Filter>src\gun\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\MainMenuScreen.h">
+      <Filter>src\gun\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\OptionsScreen.h">
+      <Filter>src\gun\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Paths.h">
+      <Filter>src\gun</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Log.h">
+      <Filter>src\gun\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\Macros.h">
+      <Filter>src\gun\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\InputAction.h">
+      <Filter>src\gun</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gun\KeyNames.h">
+      <Filter>src\gun\Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Gunfire.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\Game.cpp">
+      <Filter>src\gun</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\ViewManager.cpp">
+      <Filter>src\gun\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\GameObject.cpp">
+      <Filter>src\gun\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\Services.cpp">
+      <Filter>src\gun</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\Animation.cpp">
+      <Filter>src\gun\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\Sprite.cpp">
+      <Filter>src\gun\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pugi\pugixml.cpp">
+      <Filter>src\pugi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\AnimationLoader.cpp">
+      <Filter>src\gun\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\SpriteCache.cpp">
+      <Filter>src\gun\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\Timer.cpp">
+      <Filter>src\gun\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\LevelFactory.cpp">
+      <Filter>src\gun\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\LevelController.cpp">
+      <Filter>src\gun\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\Math.cpp">
+      <Filter>src\gun\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\Collision.cpp">
+      <Filter>src\gun\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\EventBind.cpp">
+      <Filter>src\gun\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\DiedEventArgs.cpp">
+      <Filter>src\gun\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\CollidedEventArgs.cpp">
+      <Filter>src\gun\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\GameObjectFactory.cpp">
+      <Filter>src\gun\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\GameObjectQuery.cpp">
+      <Filter>src\gun\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\WaveLoader.cpp">
+      <Filter>src\gun\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\PugiUtility.cpp">
+      <Filter>src\gun\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\ScreenManager.cpp">
+      <Filter>src\gun\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\LevelScreen.cpp">
+      <Filter>src\gun\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\HUDScreen.cpp">
+      <Filter>src\gun\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\InputContext.cpp">
+      <Filter>src\gun\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\ProfileSample.cpp">
+      <Filter>src\gun\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\Entity.cpp">
+      <Filter>src\gun\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\AddPartEventArgs.cpp">
+      <Filter>src\gun\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\Text.cpp">
+      <Filter>src\gun\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\NewWaveEventArgs.cpp">
+      <Filter>src\gun\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\FileIO.cpp">
+      <Filter>src\gun\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\SoundCache.cpp">
+      <Filter>src\gun\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\AddPartOnCollisionPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\BouncingPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\BoundingPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\DamageOnCollisionPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\DieOnCollisionPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\DroneControllerPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\FireRateMultiplierPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\GhostPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\GruntControllerPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\Part.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\PlayerControllerPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\SoundOnDiePart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\SpeedMultiplierPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\TimedDeathPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\VelocityRandomizerPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\GravityPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\SpinnerPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\AnimationFactory.cpp">
+      <Filter>src\gun\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\DieAfterAnimationPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\SpawnOnDiePart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\ExploderControllerPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\HighScoreEntryScreen.cpp">
+      <Filter>src\gun\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\Session.cpp">
+      <Filter>src\gun</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\HighScoresScreen.cpp">
+      <Filter>src\gun\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\WaveCompleteEventArgs.cpp">
+      <Filter>src\gun\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\TextFactory.cpp">
+      <Filter>src\gun\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\TextFadeDecorator.cpp">
+      <Filter>src\gun\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\Screen.cpp">
+      <Filter>src\gun\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\PolygonMath.cpp">
+      <Filter>src\gun\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\SplitterControllerPart.cpp">
+      <Filter>src\gun\Object\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\GameOverScreen.cpp">
+      <Filter>src\gun\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\MainMenuScreen.cpp">
+      <Filter>src\gun\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\OptionsScreen.cpp">
+      <Filter>src\gun\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\Paths.cpp">
+      <Filter>src\gun</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\GameOverEventArgs.cpp">
+      <Filter>src\gun\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\Log.cpp">
+      <Filter>src\gun\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\ObjectClass.cpp">
+      <Filter>src\gun\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gun\KeyNames.cpp">
+      <Filter>src\gun\Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
